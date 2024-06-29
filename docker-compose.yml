@@ -1,0 +1,40 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: leo
+    ports:
+      - "3308:3306"
+    volumes:
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+      - db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-network
+
+  app:
+    build: .
+    container_name: app
+    environment:
+      DB_URL_FIRST: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parserfirst'
+      DB_URL_SECOND: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parsersecond'
+      DB_URL_THIRD: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parserthird'
+      DB_URL_FOURTH: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parserfourth'
+      DB_URL_FIFTH: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parserfifth'
+      DB_URL_SIXTH: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parsersixth'
+      DB_URL_SEVENTH: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parserseventh'
+      DB_URL_EIGHTH: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parsereighth'
+      DB_URL_NINETH: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parsernineth'
+      DB_URL_TENTH: 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parsertenth'
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  db_data:
