@@ -7,7 +7,7 @@ import time
 from aiogram.types import CallbackQuery, Message, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
-from parser1.buybotInsta import balacne_before_purchase
+from buybotInsta import balacne_before_purchase
 from aiogram import Dispatcher
 
 from database_manager import ManagerForTelegram, DatabaseManager

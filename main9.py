@@ -9,7 +9,7 @@ from parser9.compare import compare_with_excel, excel_data
 from parser9.connect_csv_mysql import session1
 from parser9.duplicateParsTable import duplicate_table
 from models import ComparedProductsInstaBuyDuplicate, ComparedProductsConfirmPurchaseDuplicate
-from parser9.buybotInsta import purchaseCheck
+from buybotInsta import purchaseCheck
 from add_new_product_if_not_exists import add_new_product_if_not_exists
 from fetch_wbbalance import fetch_balance
 from logger import setup_logger
