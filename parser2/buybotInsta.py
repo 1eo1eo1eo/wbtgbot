@@ -8,7 +8,7 @@ from sqlalchemy import create_engine, select, Table
 from sqlalchemy.orm import sessionmaker
 from models import Base
 from fetch_wbbalance import fetch_balance
-from parser2.add_new_product_if_not_exists import add_new_product_if_not_exists
+from add_new_product_if_not_exists import add_new_product_if_not_exists
 
 balacne_before_purchase = fetch_balance()
 last_checked_id = 0

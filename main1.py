@@ -10,7 +10,7 @@ from parser1.connect_csv_mysql import session1
 from parser1.duplicateParsTable import duplicate_table
 from models import ComparedProductsInstaBuyDuplicate, ComparedProductsConfirmPurchaseDuplicate
 from parser1.buybotInsta import purchaseCheck
-from parser1.add_new_product_if_not_exists import add_new_product_if_not_exists
+from add_new_product_if_not_exists import add_new_product_if_not_exists
 from fetch_wbbalance import fetch_balance
 from logger import setup_logger
 
