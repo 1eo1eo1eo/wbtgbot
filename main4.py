@@ -4,7 +4,7 @@ import os
 from parser4.product_first_parser import ProductParser1
 from parser4.product_second_parser import ProductParser2
 from database_manager import DatabaseManager
-from parser4.compareFirstProd import update_new_products_table
+from compareFirstProd import update_new_products_table
 from parser4.compare import compare_with_excel, excel_data
 from parser4.connect_csv_mysql import session1
 from parser4.duplicateParsTable import duplicate_table
