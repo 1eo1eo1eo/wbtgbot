@@ -21,4 +21,4 @@ RUN chmod +x takeData.py \
     parser9/start_main.sh parser9/stop_main.sh \
     parser10/start_main.sh parser10/stop_main.sh
 
-    CMD ["sh", "-c", "sleep 20 && python3 run.py"]
+    CMD ["sh", "-c", "sleep 10 && python3 run.py"]
