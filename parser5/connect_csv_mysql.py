@@ -11,6 +11,6 @@ Base.metadata.create_all(engine)
 SessionFactory = sessionmaker(bind=engine)
 session1 = scoped_session(SessionFactory)
 
-xlsx_file_path = '5.xlsx'
+xlsx_file_path = 'exceltables/5.xlsx'
 excel_data = pd.read_excel(xlsx_file_path)
 
