@@ -7,20 +7,20 @@ import time
 from aiogram.types import CallbackQuery, Message, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
-from buybotInsta import balacne_before_purchase
+from wbbotfiles.buybotInsta import balacne_before_purchase
 from aiogram import Dispatcher
 
-from database_manager import ManagerForTelegram, DatabaseManager
-from models import (
+from wbbotfiles.database_manager import ManagerForTelegram, DatabaseManager
+from wbbotfiles.models import (
     ComparedProductsConfirmPurchase,
     ComparedProductsInstaBuy,
     ComparedProductsConfirmPurchaseDuplicateTelegram,
     ComparedProductsInstaBuyDuplicateTelegram
 )
-from fetch_wbbalance import fetch_balance
-from buybotConfirm import purchaseCheck_confirm
-from modules import bot
-from keyboards import (
+from wbbotfiles.fetch_wbbalance import fetch_balance
+from wbbotfiles.buybotConfirm import purchaseCheck_confirm
+from tgbotfiles.modules import bot
+from tgbotfiles.keyboards import (
     create_parser_controls,
     create_commands_keyboard,
     create_parsers_keyboard,
@@ -35,7 +35,7 @@ from keyboards import (
     create_parser9_controls,
     create_parser10_controls,
 )
-from constants import (
+from tgbotfiles.constants import (
     CHAT_IDS,
     DB_URL_FIRST,
     DB_URL_SECOND,
@@ -54,7 +54,7 @@ from constants import (
     PARSER_SCRIPTS,
     PID_FILE_PATHS
 )
-from helpers import is_process_running, read_pid_from_file, correct_image_url
+from tgbotfiles.helpers import is_process_running, read_pid_from_file, correct_image_url
 
 db_manager_first = ManagerForTelegram(DB_URL_FIRST)
 db_manager_1_first = DatabaseManager(DB_URL_FIRST)

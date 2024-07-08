@@ -6,9 +6,9 @@ import math
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 from sqlalchemy import create_engine, select, Table
 from sqlalchemy.orm import sessionmaker
-from models import Base
-from fetch_wbbalance import fetch_balance
-from add_new_product_if_not_exists import add_new_product_if_not_exists
+from wbbotfiles.models import Base
+from wbbotfiles.fetch_wbbalance import fetch_balance
+from wbbotfiles.add_new_product_if_not_exists import add_new_product_if_not_exists
 
 balacne_before_purchase = fetch_balance()
 last_checked_id = 0

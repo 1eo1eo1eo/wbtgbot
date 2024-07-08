@@ -3,16 +3,16 @@ import os
 
 from parser1.product_first_parser import ProductParser1
 from parser1.product_second_parser import ProductParser2
-from database_manager import DatabaseManager
-from compareFirstProd import update_new_products_table
+from wbbotfiles.database_manager import DatabaseManager
+from wbbotfiles.compareFirstProd import update_new_products_table
 from parser1.compare import compare_with_excel, excel_data
 from parser1.connect_csv_mysql import session1
-from duplicateParsTable import duplicate_table
-from models import ComparedProductsInstaBuyDuplicate, ComparedProductsConfirmPurchaseDuplicate
-from buybotInsta import purchaseCheck
-from add_new_product_if_not_exists import add_new_product_if_not_exists
-from fetch_wbbalance import fetch_balance
-from logger import setup_logger
+from wbbotfiles.duplicateParsTable import duplicate_table
+from wbbotfiles.models import ComparedProductsInstaBuyDuplicate, ComparedProductsConfirmPurchaseDuplicate
+from wbbotfiles.buybotInsta import purchaseCheck
+from wbbotfiles.add_new_product_if_not_exists import add_new_product_if_not_exists
+from wbbotfiles.fetch_wbbalance import fetch_balance
+from mainfiles.logger import setup_logger
 
 logger1 = setup_logger('parser1logs', 'parser1.log')
 

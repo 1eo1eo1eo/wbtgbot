@@ -9,8 +9,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get update && apt-get install -y default-mysql-client python3-pip \
     && playwright install && playwright install-deps
 
-RUN chmod +x takeData.py \
-    parser1/start_main.sh parser1/stop_main.sh \
+RUN chmod +x  parser1/start_main.sh parser1/stop_main.sh \
     parser2/start_main.sh parser2/stop_main.sh \
     parser3/start_main.sh parser3/stop_main.sh \
     parser4/start_main.sh parser4/stop_main.sh \

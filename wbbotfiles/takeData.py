@@ -1,7 +1,7 @@
 from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy import create_engine
-from models import Base
-from models import ParserStatus, ComparedProductsInstaBuy, NewProduct, ComparedProductsInstaBuyDuplicateTelegram, ComparedProductsInstaBuyDuplicate, ComparedProductsConfirmPurchaseDuplicate, ComparedProductsConfirmPurchase
+from wbbotfiles.models import Base
+from wbbotfiles.models import ParserStatus, ComparedProductsInstaBuy, NewProduct, ComparedProductsInstaBuyDuplicateTelegram, ComparedProductsInstaBuyDuplicate, ComparedProductsConfirmPurchaseDuplicate, ComparedProductsConfirmPurchase
 
 
 db_url = 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parserfirst'
