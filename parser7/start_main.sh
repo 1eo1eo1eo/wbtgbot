@@ -2,6 +2,6 @@ cd /app
 
 source /app/venv/bin/activate
 
-python /app/main7.py &
+python /app/mainfiles/main7.py &
 
-echo $! > /app/main_pid7.txt
+echo $! > /app/mainfiles/main_pid7.txt

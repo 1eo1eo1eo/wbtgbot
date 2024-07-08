@@ -2,6 +2,6 @@ cd /app
 
 source /app/venv/bin/activate
 
-python /app/main5.py &
+python /app/mainfiles/main5.py &
 
-echo $! > /app/main_pid5.txt
+echo $! > /app/mainfiles/main_pid5.txt
