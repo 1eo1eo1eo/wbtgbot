@@ -1,12 +1,12 @@
 import asyncio
 import os
 
-from parser4.product_first_parser import ProductParser1
-from parser4.product_second_parser import ProductParser2
+from parserfiles.parser4.product_first_parser import ProductParser1
+from parserfiles.parser4.product_second_parser import ProductParser2
 from wbbotfiles.database_manager import DatabaseManager
 from wbbotfiles.compareFirstProd import update_new_products_table
-from parser4.compare import compare_with_excel, excel_data
-from parser4.connect_csv_mysql import session1
+from parserfiles.parser4.compare import compare_with_excel, excel_data
+from parserfiles.parser4.connect_csv_mysql import session1
 from wbbotfiles.duplicateParsTable import duplicate_table
 from wbbotfiles.models import ComparedProductsInstaBuyDuplicate, ComparedProductsConfirmPurchaseDuplicate
 from wbbotfiles.buybotInsta import purchaseCheck
