@@ -20,4 +20,4 @@ RUN chmod +x  parserfiles.parser1/start_main.sh parserfiles.parser1/stop_main.sh
     parserfiles.parser9/start_main.sh parserfiles.parser9/stop_main.sh \
     parserfiles.parser10/start_main.sh parserfiles.parser10/stop_main.sh
 
-    CMD ["sh", "-c", "sleep 10 && python3 run.py"]
+    CMD ["sh", "-c", "sleep 20 && python3 run.py"]
