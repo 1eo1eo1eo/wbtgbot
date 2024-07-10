@@ -1,5 +1,5 @@
 from sqlalchemy import exists, and_
-from models import NewProduct, ComparedProductsInstaBuy, ComparedProductsInstaBuyDuplicateTelegram, ComparedProductsConfirmPurchase, ComparedProductsConfirmPurchaseDuplicate
+from wbbotfiles.models import NewProduct, ComparedProductsInstaBuy, ComparedProductsInstaBuyDuplicateTelegram, ComparedProductsConfirmPurchase, ComparedProductsConfirmPurchaseDuplicate
 from sqlalchemy.exc import SQLAlchemyError
 from parser5.connect_csv_mysql import excel_data
 import datetime

@@ -1,6 +1,6 @@
 import aiohttp
 import asyncio
-from models import Product1
+from wbbotfiles.models import Product1
 import logging
 
 class ProductParser1:
