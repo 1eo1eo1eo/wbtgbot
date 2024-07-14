@@ -7,8 +7,8 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.storage.memory import MemoryStorage
 
-from tgbotfiles.constants import CHAT_IDS
-from tgbotfiles.callbacks import (
+from .constants import CHAT_IDS
+from .callbacks import (
     start_command,
     manage_parsers_callback,
     manage_parser1_callback,

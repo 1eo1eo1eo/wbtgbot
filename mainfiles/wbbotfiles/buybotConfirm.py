@@ -5,8 +5,8 @@ import time
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 from sqlalchemy import create_engine, select, Table
 from sqlalchemy.orm import sessionmaker
-from wbbotfiles.models import Base
-from wbbotfiles.fetch_wbbalance import fetch_balance
+from .models import Base
+from .fetch_wbbalance import fetch_balance
 
 balacne_before_purchase = fetch_balance()
 last_checked_id = 0

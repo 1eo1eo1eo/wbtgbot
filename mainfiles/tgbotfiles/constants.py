@@ -13,44 +13,44 @@ CHAT_IDS = {"1111741813"} #, "525119691", "5162952042", "599786558", "5246704356
 
 PARSER_SCRIPTS = {
     1: {
-        "start": "/app/parserfiles/parser1/start_main.sh",
-        "stop": "/app/parserfiles/parser1/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser1/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser1/stop_main.sh"
     },
     2: {
-        "start": "/app/parserfiles/parser2/start_main.sh",
-        "stop": "/app/parserfiles/parser2/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser2/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser2/stop_main.sh"
     },
     3: {
-        "start": "/app/parserfiles/parser3/start_main.sh",
-        "stop": "/app/parserfiles/parser3/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser3/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser3/stop_main.sh"
     },
     4: {
-        "start": "/app/parserfiles/parser4/start_main.sh",
-        "stop": "/app/parserfiles/parser4/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser4/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser4/stop_main.sh"
     },
     5: {
-        "start": "/app/parserfiles/parser5/start_main.sh",
-        "stop": "/app/parserfiles/parser5/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser5/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser5/stop_main.sh"
     },
     6: {
-        "start": "/app/parserfiles/parser6/start_main.sh",
-        "stop": "/app/parserfiles/parser6/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser6/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser6/stop_main.sh"
     },
     7: {
-        "start": "/app/parserfiles/parser7/start_main.sh",
-        "stop": "/app/parserfiles/parser7/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser7/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser7/stop_main.sh"
     },
     8: {
-        "start": "/app/parser8/parserfiles/start_main.sh",
-        "stop": "/app/parser8/parserfiles/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser8/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser8/stop_main.sh"
     },
     9: {
-        "start": "/app/parser9/parserfiles/start_main.sh",
-        "stop": "/app/parser9/parserfiles/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser9/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser9/stop_main.sh"
     },
     10: {
-        "start": "/app/parser10/parserfiles/start_main.sh",
-        "stop": "/app/parser10/parserfiles/stop_main.sh"
+        "start": "/app/mainfiles/parserfiles/parser10/start_main.sh",
+        "stop": "/app/mainfiles/parserfiles/parser10/stop_main.sh"
     },
 }
 

@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, Table, select, and_
 from sqlalchemy.orm import sessionmaker
 import logging
-from wbbotfiles.models import Base
+from .models import Base
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

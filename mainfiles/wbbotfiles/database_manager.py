@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, exists
 from sqlalchemy.orm import sessionmaker, scoped_session
-from wbbotfiles.models import Base, ComparedProductsInstaBuyDuplicateTelegram, ParserStatus
+from .models import Base, ComparedProductsInstaBuyDuplicateTelegram, ParserStatus
 import logging
    
 

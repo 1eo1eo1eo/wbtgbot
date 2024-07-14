@@ -12,7 +12,7 @@ from wbbotfiles.models import ComparedProductsInstaBuyDuplicate, ComparedProduct
 from wbbotfiles.buybotInsta import purchaseCheck
 from wbbotfiles.add_new_product_if_not_exists import add_new_product_if_not_exists
 from wbbotfiles.fetch_wbbalance import fetch_balance
-from mainfiles.logger import setup_logger
+from logger import setup_logger
 
 logger9 = setup_logger('parser9logs', 'parser9.log')
 

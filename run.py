@@ -1,8 +1,8 @@
 import asyncio
 import logging
-from tgbotfiles.handlers import router
-from tgbotfiles.modules import dp, bot
-from tgbotfiles.callbacks import notify_new_products, notify_discounted_products
+from mainfiles.tgbotfiles.handlers import router
+from mainfiles.tgbotfiles.modules import dp, bot
+from mainfiles.tgbotfiles.callbacks import notify_new_products, notify_discounted_products
 
 async def main():
     dp.include_router(router)
