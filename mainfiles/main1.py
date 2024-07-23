@@ -1,6 +1,6 @@
 import asyncio
 import os
-
+1
 from parserfiles.parser1.product_first_parser import ProductParser1
 from parserfiles.parser1.product_second_parser import ProductParser2
 from wbbotfiles.database_manager import DatabaseManager
