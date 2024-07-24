@@ -2,8 +2,7 @@ FROM python:3.12
 
 WORKDIR /app
 
-COPY . .
-
+COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 RUN apt-get update && apt-get install -y default-mysql-client python3-pip \
@@ -20,4 +19,6 @@ RUN chmod +x  mainfiles/parserfiles/parser1/start_main.sh mainfiles/parserfiles/
     mainfiles/parserfiles/parser9/start_main.sh mainfiles/parserfiles/parser9/stop_main.sh \
     mainfiles/parserfiles/parser10/start_main.sh mainfiles/parserfiles/parser10/stop_main.sh
 
-    CMD ["sh", "-c", "sleep 20 && python3 run.py"]
+COPY . .
+
+CMD ["sh", "-c", "sleep 20 && python3 run.py"]
