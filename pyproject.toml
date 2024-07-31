@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "wbtgbotonserver"
+version = "0.1.0"
+description = "wildberries scrapper + wildberries buy script + telegram notification and management"
+authors = ["Lev <lafitel31@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+aiogram = "^3.10.0"
+sqlalchemy = "^2.0.31"
+openpyxl = "^3.1.5"
+playwright = "^1.45.0"
+mysql-connector-python = "^9.0.0"
+pandas = "^2.2.2"
+psutil = "^6.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.0"
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
