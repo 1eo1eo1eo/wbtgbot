@@ -8,6 +8,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get update && apt-get install -y default-mysql-client python3-pip \
     && playwright install && playwright install-deps
 
+COPY . .
+
 RUN chmod +x  mainfiles/parserfiles/parser1/start_main.sh mainfiles/parserfiles/parser1/stop_main.sh \
     mainfiles/parserfiles/parser2/start_main.sh mainfiles/parserfiles/parser2/stop_main.sh \
     mainfiles/parserfiles/parser3/start_main.sh mainfiles/parserfiles/parser3/stop_main.sh \
@@ -19,6 +21,5 @@ RUN chmod +x  mainfiles/parserfiles/parser1/start_main.sh mainfiles/parserfiles/
     mainfiles/parserfiles/parser9/start_main.sh mainfiles/parserfiles/parser9/stop_main.sh \
     mainfiles/parserfiles/parser10/start_main.sh mainfiles/parserfiles/parser10/stop_main.sh
 
-COPY . .
 
 CMD ["sh", "-c", "sleep 20 && python3 run.py"]
