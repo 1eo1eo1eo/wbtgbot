@@ -9,7 +9,7 @@ DB_URL_EIGHTH = 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parsereight
 DB_URL_NINETH = 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parsernineth'
 DB_URL_TENTH = 'mysql+mysqlconnector://wbbot:Wbbot12345!@mysql:3306/parsertenth'
 
-CHAT_IDS = {"1111741813"} #, "525119691", "5162952042", "599786558", "5246704356"
+CHAT_IDS = {"1111741813"}
 
 PARSER_SCRIPTS = {
     1: {
