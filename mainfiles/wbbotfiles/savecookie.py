@@ -13,7 +13,7 @@ def save_storage_state():
         """ signin = page.wait_for_selector('text="Войти"')
         signin.click()
         phone_enter = page.wait_for_selector('.input-item')
-        phone_enter.fill("79502962879")
+        phone_enter.fill("phone number")
         phone_enter.press("Enter") """
 
         input("Введите код авторизации в открытом браузере и нажмите Enter здесь, чтобы продолжить...")
